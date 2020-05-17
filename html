@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pinka.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <!-- <div id="mobileUI">
+        <div id="split">
+        </div>
+        <div id="eject">
+        </div>
+    </div> -->
+    <!-- <div id="chatArea">
+        <ul id="chatBox">
+            <li class="game">Welcome to Pinka.IO!</li> 
+        </ul>
+        <input type="text" id="msgInput">
+    </div> -->
+    <div id="overlay">
+        <div id="mainContainer">
+            <div class="container">
+                <p>Advertisement</p>
+            </div>
+            <div class="container" id="main">
+                <h2>Hello!</h2>
+                <p>Type a nick below or leave it empty.</p>
+                <input type="text" id="nickInput" placeholder="Nick" maxlength="14">
+                <div id="buttons">
+                    <button id="playButton">Play</button>
+                    <button id="settingsButton">Settings</button>
+                </div>
+                <div id="settings">
+                    <select id="gamemodes">
+                        <option value="ffa">FFA</option>
+                        <option value="instant">Instant</option>
+                    </select>
+                    <input type="checkbox" name="skin">Show skins
+                    <!-- <input type="checkbox" name="chatbox">Show chatbox -->
+                    <input type="checkbox" name="mass">Show mass
+                </div>
+                <center>
+                    <p>spacebar for split<br>w for eject</p>
+                </center>
+            </div>
+            <div class="container">
+                <center>
+                    <h2>Changelog</h2>
+                    <p>New UI<br>Mass decay<br>Settings<br>
+                    Spikes on viruses<br>Spawn change<br>Touch controls
+                    <br>Removed chat<br><b>Added gamemodes</b></p>
+                </center>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="skins.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
